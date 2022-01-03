@@ -1,0 +1,169 @@
+body{
+    margin:0;
+    background-image: url("../imges/bg.PNG");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: 思源宋体4;
+    src: url(../font/SourceHanSerifCN-Heavy-4.otf) format("opentype");
+}
+@font-face {
+    font-family: 思源宋体6;
+    src: url(../font/SourceHanSerifCN-Medium-6.otf) format("opentype");
+}
+@font-face {
+    font-family: 思源宋体1;
+    src: url(../font/SourceHanSerifCN-Regular-1.otf) format("opentype");
+}
+
+.passage{
+    border:5px solid rgba(0, 0, 0, 0);
+    padding:20px 12vh 20px 12vh;
+    margin:8vh 20vh;
+    width: 60%;
+    text-align:left;
+    color:rgb(0, 0, 0);
+    background-color: rgba(252, 251, 195, 0.26);
+    line-height: 35px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow:hidden;
+    font-family: 思源宋体6;
+}
+.passage h1 {
+    color:rgb(14, 153, 158);
+    font-size: 50px;
+    font-family: 思源宋体4;
+}
+.passage h2 {
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 思源宋体4;
+}
+
+.link {
+    color: rgb(198, 248, 255);
+    font-family: 思源宋体6;
+}
+a.link:hover {
+    color:aquamarine;
+    font-size: 140%;
+    transition: font-size .25s;
+    font-family: 思源宋体6;
+}
+
+#g{
+    color:rgb(34, 219, 34);
+    font-size: 20px;
+    font-family: 思源宋体4;
+}
+
+#p1{
+    margin:10px 15% 10px 15% ;
+    width:70%;
+}
+
+
+
+
+/*导航栏*/
+.header{
+    width:100%;
+    height:35vh;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width:100%;
+    padding: 20px 0;
+    text-align:center;
+}
+.logo{
+    width:120px;
+    margin:1px 0;
+    cursor:pointer;
+}
+nav ul{
+    background: rgb(253, 255, 158);
+    width:100%;
+    margin-top:10px;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:18px 30px;
+}
+.headera{
+    color:rgb(142, 180, 185);
+    text-decoration:none;
+    font-size:23px;
+    font-weight: bold;
+    font-family: 思源宋体4;
+}
+.headera:hover{
+    color:rgb(156, 215, 223);
+    text-decoration:none;
+    font-size:23px;
+    font-weight: bold;
+    font-family: 思源宋体4;
+}
+
+nav.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0px 8%;
+    background: rgb(253, 255, 158);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: padding 1s;
+    z-index: 5;
+}
+nav.sticky ul{
+    width:auto;
+}
+img.reduce{
+    width:80px;
+    margin:1px;
+}
+
+/*底栏*/
+.footer {
+    width: 70%;
+    height:120px;
+    bottom: 0;
+    color:rgb(255, 255, 226);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 5px 15% 5px 15%;
+}
+
+h2.footer-h2{
+    color:rgb(151, 255, 232);
+    padding:0px;
+}
+.footer-inline{
+    display:inline-block;
+    margin:50px 50px 0px 0px;
+    text-align: center;
+    font-family: 思源宋体1;
+}
+.footer-inline2{
+    display:inline-block;
+    position: absolute;
+    margin:0px 15% 0px 0px;
+    right:0px;
+    text-align: center;
+    font-family: 思源宋体1;
+}
+
+.contactImg{
+    width:80px;
+    margin:10px 30px 0px 0px
+}
+
+/**/
