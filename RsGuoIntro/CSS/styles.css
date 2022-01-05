@@ -1,0 +1,577 @@
+/*Cascading Style Sheets层叠样式标*/
+body{
+    background-image: url(../img/photo/bg3w.webp),url(../img/photo/bg3.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:azure;
+    margin:0;/*here*/
+    
+}
+@font-face {
+    font-family: 思源宋体4;
+    src: url(../font/SourceHanSerifCN-Heavy-4.otf) format("opentype");
+}
+@font-face {
+    font-family: 思源宋体6;
+    src: url(../font/SourceHanSerifCN-Medium-6.otf) format("opentype");
+}
+@font-face {
+    font-family: 思源宋体1;
+    src: url(../font/SourceHanSerifCN-Regular-1.otf) format("opentype");
+}
+
+/*导航栏*/
+ul.hea{
+    width:100%;
+    margin-top:10px;
+}
+ul li.hea{
+    display:inline-block;
+    list-style:none;
+    margin:20px 30px;
+    color:rgb(0, 0, 0);
+}
+.headera{
+    color:rgb(142, 180, 185);
+    text-decoration:none;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.header{
+    top:0;
+    position:sticky;
+    align-items:center;
+    display:flex;
+    width:auto;/*导航栏宽度*/
+    height:55px;
+    box-shadow: 2px 5px 15px rgb(112, 253, 222);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 100000;
+}
+
+.header a.header-d{
+    width:150px;
+    height:55px;
+    line-height:50px;
+    text-align:center;
+    font-size:26px;
+    text-decoration: none;
+    color:rgb(224, 250, 246);
+    transition: .25s;
+    font-family: 思源宋体4;
+}
+
+.header-b{
+    position: absolute;
+    left:0;
+    width:150px;
+    height:55px;
+    background-color: rgba(16, 213, 183, 0.342);
+    z-index:-999;
+    transition: .5s; 
+}
+a.header-d:hover {
+    color:aquamarine;
+    font-size: 26px;
+}
+
+.header-c{
+    width:auto;
+    height:53px;
+}
+
+.header .header-b[style]{
+    left: calc(150px * var(--def-index));
+}
+
+.header a:nth-child(1):hover~.header-b{
+    left:0px;
+}
+.header a:nth-child(2):hover~.header-b{
+    left:150px;
+}
+.header a:nth-child(3):hover~.header-b{
+    left:300px;
+}
+.header a:nth-child(4):hover~.header-b{
+    left:450px;
+}
+.header a:nth-child(5):hover~.header-b{
+    left:600px;
+}
+
+/*底栏*/
+.footer {
+    width: 70%;
+    height: auto;
+    bottom: 0;
+    color:rgb(255, 255, 226);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 5px 15% 5px 15%;
+    font-family: 思源宋体1;
+}
+/*底栏尽量横向排版*/
+h2.footer-h2{
+    color:rgb(173, 255, 237);
+    padding:0px;
+    font-size: 28px;
+    margin:5px 0px 12px 0px;
+    font-family: 思源宋体4;
+}
+.footer-inline{
+    display:inline-block;
+    margin:0px 50px 0px 0px;
+    font-family: 思源宋体1;
+}
+
+/*图片设置*/
+.square {
+    width: 120px;
+    height: 120px;
+}
+.mclogo{
+    width:auto ;
+    height:55px;
+}
+    /*更新日志图片*/
+.html{
+    width: 450px;
+    height: auto;
+    margin:20px;
+}
+.html2{
+    width: auto;
+    height: 389px;
+    margin:20px 20px 20px 0px;
+}
+.html3{
+    width: 350px;
+    height: auto;
+    margin:10px 10px 10px 0px;
+}
+.html4{
+    width: 350px;
+    height: auto;
+    margin:10px;
+}
+
+.mcp{
+    width: 400px;
+    height: auto;
+    margin:10px 10px 10px 0px;
+}
+.mcp2{
+    width: auto;
+    height: 80px;
+    margin:10px 10px 10px 0px;
+}
+.mcp3{
+    width: auto;
+    height: 45px;
+    vertical-align:middle;
+}
+
+/*link*/
+.link {
+    color: rgb(198, 248, 255);
+}
+a.link:hover {
+    color:aquamarine;
+    font-size: 140%;
+    transition: font-size .25s
+}
+
+
+/*文本*/
+.delete {
+    color: rgb(205, 236, 229); 
+    font-style:oblique;
+    letter-spacing:3px;
+}
+.name{
+    color: rgb(178, 243, 248);
+    font-size: 28px;
+    font-family: 思源宋体7;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0), 3px 3px 0 #5ff0e4ab;
+}
+
+.text{
+    height: 80px;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    color:rgb(43, 53, 54);
+    background-color: rgba(103, 143, 134, 0.582); /*here*/
+    backdrop-filter: blur(10px);
+}
+
+/*border*/
+.self-introduction{
+    border:1px solid rgba(240, 247, 150, 0.856);
+    padding:20px;
+    border-radius:20px;
+    margin:20px auto;
+    width:70%;
+    /* height:500px; */
+    overflow:auto;
+    box-shadow: 0px 2px 7px rgba(253, 251, 112, 0.521);
+    color:azure;
+    /*border-radius不要用百分比，建议直接用 px 作为单位*/
+    font-family: 思源宋体6;
+}
+.self-introduction h1{
+    font-family: 思源宋体4;
+    font-size: 38px;
+    margin:15px 0px 20px 0px;
+}
+.mc{
+    border:5px dotted rgba(178, 248, 215, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    color:azure;
+    padding:20px;
+    margin:20px auto;
+    width:72%;
+    height:1000px;
+    /*这里“dashed”是虚线，dotted是点状线*/
+    font-family: 思源宋体6;
+}
+.mc h2{
+    font-family: 思源宋体4;
+    margin:10px 0px 30px 0px;
+    font-size: 45px;
+
+}
+.mc02{
+    border:5px dotted rgba(178, 248, 215, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    color:azure;
+    padding:20px;
+    margin:20px auto;
+    width:72%;
+    height:1800px;
+    font-family: 思源宋体6;
+}
+.mc03{
+    border:5px dotted rgba(229, 255, 243, 0.7);
+    padding:15px;
+    margin:10px;
+    width:450px;
+    height:280px;
+    text-align: center;
+    float:left;
+}
+.mc04{
+    margin:5px 0px 5px;
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mc05{
+    border:5px dotted rgba(229, 255, 243, 0.7);
+    padding:15px;
+    margin:5px;
+    width:450px;
+    height:300px;
+    overflow:auto;
+    text-align: center;
+    float:left;
+}
+.mc06{
+    padding:15px;
+    margin:5px;
+    width:450px;
+    height:300px;
+    float:left;
+}
+/*表格*/
+.mcbottom{
+    border:5px dotted rgba(178, 248, 215, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    color:azure;
+    padding:20px;
+    margin:20px auto;
+    width:72%;
+    height:auto;
+    font-family: 思源宋体6;
+}
+.mcb1{
+    display:inline-block;
+}
+
+
+.mc0{
+    padding:20x;
+    width:55%;
+    height:100px;
+    margin: 10px;
+    float:none
+}
+.mc2{
+    margin:20px 0px 20px 0px;
+    width:56%;
+    height:800px;
+    float:left
+}
+.mc3{
+    padding:18px;
+    width:40%;
+    height:800px;
+    float:right;
+    text-align: center;
+}
+.update{
+    border:5px dotted rgba(178, 248, 215, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    color:azure;
+    padding:20px;
+    margin:30px auto;
+    width:70%;
+    height:700px;
+    overflow:auto;
+    font-family: 思源宋体6;
+}
+.update h2{
+    font-size: 40px;
+    font-family: 思源宋体4;
+    margin:2px 0px 32.9px 0px;
+}
+/*border-top-left-radius: 100px;*/
+.passage{
+    border:5px solid rgba(0, 0, 0, 0);
+    padding:5px;
+    margin:20px auto;
+    width: 70%;
+    text-align:left;
+    color:azure;
+    background-color: rgba(0, 0, 0, 0.212);
+    line-height: 35px;
+    font-family: 思源宋体6;
+}
+.passage h2{
+    font-family: 思源宋体4;
+    font-size: 30px;
+}
+
+/*表格*/
+tr:nth-child(odd){/*单行染色*/
+    background-color:#EAF2D3;
+}
+tr:nth-child(even){/*双行染色*/
+    background-color:#abe7a3;
+}
+table{
+    color:black;
+    border-collapse: 0;
+    padding:5px;
+}
+td{
+    padding:5px;
+}
+
+.inside {
+    list-style-type:none
+}
+
+/*一条分割线*/
+.line{
+    height:1px;
+    width:80%;
+    border-top:1px solid #e5e5e5;
+    margin:20px;
+}
+
+/*联系方式背景*/
+.contact{
+    width: 80%;
+    height: 700px;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: 思源宋体6;
+
+}
+.contact1{
+    text-align:center;
+    width: 600px;
+    height: auto;
+    margin: 5px;
+    display: inline-block;
+}
+.contact1 h1{
+    font-family: 思源宋体4;
+    font-size: 40px;
+}
+.contact2{
+    text-align:center;
+    width: 40%;
+    height: auto;
+    margin: 5px;
+    display: inline-block;
+    top:0%;
+}
+.WeChat{
+    width:290px;
+    height:auto;
+    margin:10px;
+}
+
+/*按钮*/
+a.button {
+    /* 相对定位 */
+    position: relative;
+    width: 400px;
+    height: 100px;
+    padding:10px 20px 10px 20px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 思源宋体6;
+    color: #fff;
+    /* 圆角属性 */
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    z-index: 1;
+}
+
+/*发光效果 */
+a.button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(20px);
+}
+
+a.button:hover {
+    /* 动画 名称 时间 infinite 是无限次播放 */
+    animation: sun 8s infinite;
+}
+
+a.button:hover::before {
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}
+
+/*一个神奇的效果*/
+ul.aa{
+    position: relative;
+}
+ul.aa li.aa{
+    list-style: none;
+    font-size: 15px;
+}
+
+ul.aa li.aa a.aa{
+    position: relative;
+    color: rgba(185, 185, 185, 0.5);
+    text-decoration: none;
+}
+ul.aa li.aa a.aa:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    color: azure;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ul.aa:hover li.aa a.aa:before{
+    animation: animate 0.5s steps(5000) forwards;
+}
+/*上面steps和下面width一起调步频&显示长度*/
+@keyframes animate {
+    0%{
+        width: 1000px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+ul.aa li.aa:hover a.aa:before{
+    animation: animate2 2s steps(5000) forwards;
+}
+@keyframes animate2 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 1000px;
+    }
+}
+/*效果结束*/
+/*Search*/
+.search-box {
+    background: rgba(185, 255, 255, 0.603);
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    right:25px;
+    top:2px;
+    /*居中分开：transform: translate(-50%, -50%);*/
+}
+button.search-btn {
+    float:right;
+    width: 30px;
+    height: 30px;
+    border-radius: 500px;
+    background: rgba(251, 255, 136, 0.719);
+    transition: 0.4s;
+    text-decoration: none;
+    border:rgba(251, 255, 136, 0.719);
+}
+.search-box:hover > .search-btn {
+    background: rgba(255, 226, 129, 0.719);
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float:left;
+    padding: 0;
+    color: azure;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0;
+    font-family: 思源宋体3;
+}
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+.searchp{
+    width:25px;
+    height:25px;
+    margin: 1px 2px 0px 0px;
+}
+
+/**/
+.redaa{
+    color:rgb(240, 46, 46);
+    font-size:20px;
+}
